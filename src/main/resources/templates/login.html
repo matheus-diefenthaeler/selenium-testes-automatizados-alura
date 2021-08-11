@@ -7,7 +7,7 @@
 		<div class="container">
 			<div th:replace="~{base :: titulo('Login')}"></div>
 
-			<div th:if="${param.error}" class="alert alert-danger" role="alert">   
+			<div id="login-invalido" th:if="${param.error}" class="alert alert-danger" role="alert">
 				Usuário e senha inválidos.
 			</div>
 
